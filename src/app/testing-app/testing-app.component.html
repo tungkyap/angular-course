@@ -1,1 +1,25 @@
-<p>testing-app works!</p>
+<nav>
+  <a spyAnchor #a="spyAnchor">Menu 1</a>
+  <a spyAnchor #b="spyAnchor">Menu 2</a>
+  <a spyAnchor #c="spyAnchor">Menu 3</a>
+  <a spyAnchor #d="spyAnchor">Menu 4</a>
+  <a spyAnchor #e="spyAnchor">Menu 5</a>
+</nav>
+
+<main spyScrollContainer>
+  <section [spyAreaFor]="a">
+    Menu 1
+  </section>
+  <section [spyAreaFor]="b">
+    Menu 2
+  </section>
+  <section [spyAreaFor]="c">
+    Menu 3
+  </section>
+  <section [spyAreaFor]="d">
+    Menu 4
+  </section>
+  <section [spyAreaFor]="e">
+    Menu 5
+  </section>
+</main>
