@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { COURSES } from 'src/db-data'
 
 @Component({
   selector: 'app-course-card',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course-card.component.css']
 })
 export class CourseCardComponent implements OnInit {
+
+  courses: any = COURSES;
 
   constructor() { }
 

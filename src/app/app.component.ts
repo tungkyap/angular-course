@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { COURSES } from 'src/db-data';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +6,5 @@ import { COURSES } from 'src/db-data';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-course';
+
 }
