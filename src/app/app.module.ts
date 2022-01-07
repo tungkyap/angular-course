@@ -7,6 +7,7 @@ import { SpyAnchorDirective } from './testing-app/spy-anchor.directive';
 import { SpyAreaForDirective } from './testing-app/spy-area-for.directive';
 import { SpyScrollContainerDirective } from './testing-app/spy-scroll-container.directive';
 import { LearnAppComponent } from './learn-app/learn-app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { LearnAppComponent } from './learn-app/learn-app.component';
     LearnAppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
