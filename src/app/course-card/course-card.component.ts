@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { COURSES } from 'src/db-data'
+import { Component, Input, OnInit } from '@angular/core';
+import { Course } from '../model/course';
 
 @Component({
   selector: 'app-course-card',
@@ -8,8 +8,15 @@ import { COURSES } from 'src/db-data'
 })
 export class CourseCardComponent implements OnInit {
 
-  courses: any = COURSES;
 
+  @Input()
+  course!: Course;
+  @Input()
+  title!: string;
+  @Input()
+  url!: string;
+  @Input()
+  description!: string;
   constructor() { }
 
   ngOnInit(): void {
